@@ -493,10 +493,10 @@ class Chapter3
 class Chapter4
 {
 
-public :
-///RateOfReturn Function
-void RateOfReturn()
-{
+    public :
+    ///RateOfReturn Function
+    void RateOfReturn()
+ {
     ld r , Ct , Pt , Pt1;
     cout<<"Please Enter Value At Ending\n";
     cin>>Pt;
@@ -506,41 +506,41 @@ void RateOfReturn()
     cin>>Ct;
     r = ( (Ct+(Pt - Pt1))/Pt1 ) * 100;
     cout<<"Rate Of Return Is "<<r<<"%\n";
-}
-///Range Function
-void Range()
-{
+ }
+    ///Range Function
+    void Range()
+ {
     ll NoOfProjects;
-cout<<"Please Enter Number Of Projects You Want To Compare\n";
-cin>>NoOfProjects;
-ld Range[ NoOfProjects ];
-map<ld,ll> ProjectNumber;
-for(short i = 1; i<=NoOfProjects;i++)
-{
-    ld mx , mn;
-    cout<<"Please Enter Highest Rate Of Return Of Project No. "<<i<<"\n";
-    cin>>mx;
-    cout<<"Please Enter Lowest Rate Of Return Of Project No. "<<i<<"\n";
-    cin>>mn;
-    Range[i-1] = mx - mn;
-    ProjectNumber[ Range[i-1] ] = i;
-}
-sort(Range,Range + NoOfProjects);
-cout<<"Ranking Of Projects Is:\n";
-for(short i = 1; i <= NoOfProjects;i++)
-{
-    cout<<i<<")"<<"Project No. "<< ProjectNumber[ Range[i-1] ]<<" Which Have Range Equal "<<Range[i-1]<<"%\n";
-}
-}
-///ProjectRiskReturn Function
-void ProjectRiskReturn()
-{
-    short num;
-    HERE:
-    cout<<"Please Enter : \n(1) Standard Deviation (Total Risk)\n(2) Expected Return\n";
-    cin>>num;
-    if(num == 1)
+    cout<<"Please Enter Number Of Projects You Want To Compare\n";
+    cin>>NoOfProjects;
+    ld Range[ NoOfProjects ];
+    map<ld,ll> ProjectNumber;
+    for(short i = 1; i<= NoOfProjects;i++)
     {
+        ld mx , mn;
+        cout<<"Please Enter Highest Rate Of Return Of Project No. "<<i<<"\n";
+        cin>>mx;
+        cout<<"Please Enter Lowest Rate Of Return Of Project No. "<<i<<"\n";
+        cin>>mn;
+        Range[i-1] = mx - mn;
+        ProjectNumber[ Range[i-1] ] = i;
+    }
+    sort(Range,Range + NoOfProjects);
+    cout<<"Ranking Of Projects Is:\n";
+    for(short i = 1; i <= NoOfProjects;i++)
+    {
+        cout<<i<<")"<<"Project No. "<< ProjectNumber[ Range[i-1] ]<<" Which Have Range Equal "<<Range[i-1]<<"%\n";
+    }
+}
+    ///ProjectRiskReturn Function
+    void ProjectRiskReturn()
+    {
+        short num;
+        HERE:
+        cout<<"Please Enter : \n(1) Standard Deviation (Total Risk)\n(2) Expected Return\n";
+        cin>>num;
+        if(num == 1)
+        {
         HERE1:
         cout<<"Please Enter (1) If It's Based On Expected Future Cash Flow AND Probability Of Happening At Each Case OR (2) If It's Based On Historical Data\n";
         short choice;
@@ -639,32 +639,32 @@ void ProjectRiskReturn()
     cout<<"Please Make Sure That You Have Entered (1) OR (2)\n";
     goto HERE;
     }
-}
-///CoefficientOfVariance Function
-void CoefficientOfVariance()
-{
-        ll NoOfProjects;
-    cout<<"Please Enter Number Of Projects You Want To Compare\n";
-    cin>>NoOfProjects;
-    ld CoefficientOfVariance[ NoOfProjects ];
-    map<ld,ll> ProjectNumber;
-    for(short i = 1; i<=NoOfProjects;i++)
+  }
+    ///CoefficientOfVariance Function
+    void CoefficientOfVariance()
     {
-        ld SD , R;
-        cout<<"Please Enter Standard Deviation Of Project No. "<<i<<"\n";
-        cin>>SD;
-        cout<<"Please Enter Expected Return Of Project No."<<i<<"\n";
-        cin>>R;
-        CoefficientOfVariance[i-1] = SD/R;
-        ProjectNumber[ CoefficientOfVariance[i-1] ] = i;
-    }
-    sort(CoefficientOfVariance,CoefficientOfVariance + NoOfProjects);
-    cout<<"Ranking Of Projects Is:\n";
-    for(short i = 1; i<=NoOfProjects;i++)
-    {
-        cout<<i<<")"<<"Project No. "<< ProjectNumber[ CoefficientOfVariance[i-1] ]<<" Which Have Coefficient Of Variance Equal "<<CoefficientOfVariance[i-1]<<"\n";
-    }
-    }
+            ll NoOfProjects;
+        cout<<"Please Enter Number Of Projects You Want To Compare\n";
+        cin>>NoOfProjects;
+        ld CoefficientOfVariance[ NoOfProjects ];
+        map<ld,ll> ProjectNumber;
+        for(short i = 1; i<=NoOfProjects;i++)
+        {
+            ld SD , R;
+            cout<<"Please Enter Standard Deviation Of Project No. "<<i<<"\n";
+            cin>>SD;
+            cout<<"Please Enter Expected Return Of Project No."<<i<<"\n";
+            cin>>R;
+            CoefficientOfVariance[i-1] = SD/R;
+            ProjectNumber[ CoefficientOfVariance[i-1] ] = i;
+        }
+        sort(CoefficientOfVariance,CoefficientOfVariance + NoOfProjects);
+        cout<<"Ranking Of Projects Is:\n";
+        for(short i = 1; i<=NoOfProjects;i++)
+        {
+            cout<<i<<")"<<"Project No. "<< ProjectNumber[ CoefficientOfVariance[i-1] ]<<" Which Have Coefficient Of Variance Equal "<<CoefficientOfVariance[i-1]<<"\n";
+        }
+        }
     /// Portfolio Return Function
     void PortfolioReturn()
     {
@@ -774,7 +774,7 @@ void CoefficientOfVariance()
             }
             else if(ChoiceCOV == 2)
             {
-                for(short i = 1 ;i<= NoOfAssets ;i++)
+                for(short i = 1 ;i <= NoOfAssets ;i++)
                 {
                 cout<<"Please Enter Average Return Of Asset No. "<<i<<"\n";
                 cin>>AssetsAverageReturn[i];
@@ -792,11 +792,11 @@ void CoefficientOfVariance()
                             Multi *= (Return - AssetsAverageReturn[j] );
                              }
                              ld Probability;
-                             cout<<"Please Enter Probability Of Happening \n";
+                             cout<<"Please Enter Probability Of Happening\n";
                              cin>>Probability;
                              Covariance += (Multi * Probability);
                         }
-                            cout<<"THIS COVERANCE BITCHHHH "<<Covariance<<"\n";
+                //cout<<"THIS COVERANCE BITCHHHH "<<Covariance<<"\n";
                 Sigma += ( 2 * WMulti * Covariance);
                 PortofolioRisk = sqrt(Sigma);
                 PortofolioRisk *= 100;
@@ -814,55 +814,55 @@ void CoefficientOfVariance()
         goto HERE2;
         }
 
+        }
+    else
+    {
+         cout<<"Please Make Sure That You Have Entered (1) OR (2)\n";
+         goto HERE1;
     }
-else
-{
-     cout<<"Please Make Sure That You Have Entered (1) OR (2)\n";
-     goto HERE1;
-}
-}
+  }
 
-/// Beta Of Portfolio Function
-void PortfolioBeta()
-{
-    short NoOfAssets;
-    ld PortfolioBeta = 0 ;
-    cout<<"Please Enter Number Of Assets In Portfolio\n";
-    cin>>NoOfAssets;
-    for(short i =1;i <= NoOfAssets;i++)
-{
-    ld B , W ;
-   cout<<"Please Enter Weight Of Asset No. "<<i<<" In (Decimal Range From 0 To 1)\n";
-   cin>>W;
-   cout<<"Please Enter Beta (Non-Diversifiable Risk) Of Asset No. "<<i<<"\n";
-   cin>>B;
-   PortfolioBeta += ( W * B );
-}
-    cout<<"Beta Of The Portfolio Is "<<PortfolioBeta<<"\n";
+    /// Beta Of Portfolio Function
+    void PortfolioBeta()
+    {
+        short NoOfAssets;
+        ld PortfolioBeta = 0 ;
+        cout<<"Please Enter Number Of Assets In Portfolio\n";
+        cin>>NoOfAssets;
+        for(short i =1;i <= NoOfAssets;i++)
+    {
+        ld B , W ;
+       cout<<"Please Enter Weight Of Asset No. "<<i<<" In (Decimal Range From 0 To 1)\n";
+       cin>>W;
+       cout<<"Please Enter Beta (Non-Diversifiable Risk) Of Asset No. "<<i<<"\n";
+       cin>>B;
+       PortfolioBeta += ( W * B );
+    }
+        cout<<"Beta Of The Portfolio Is "<<PortfolioBeta<<"\n";
 
-    if(PortfolioBeta == 1) cout<<"This Portfolio Have Same Beta Of Market Which Is 1 \n";
-    else if(PortfolioBeta == 0) cout<<"This Portfolio Is Unaffected By Market Movement As Beta Is ZERO \n";
-    else if(PortfolioBeta > 1) cout<<"This Portfolio Moves In The Same Direction As The Market As Beta Is Higher Than 1 \n";
-    else cout<<"This Portfolio Moves In The Opposite Direction As The Market As Beta Is Lower Than 1 \n";
+        if(PortfolioBeta == 1) cout<<"This Portfolio Have Same Beta Of Market Which Is 1 \n";
+        else if(PortfolioBeta == 0) cout<<"This Portfolio Is Unaffected By Market Movement As Beta Is ZERO \n";
+        else if(PortfolioBeta > 1) cout<<"This Portfolio Moves In The Same Direction As The Market As Beta Is Higher Than 1 \n";
+        else cout<<"This Portfolio Moves In The Opposite Direction As The Market As Beta Is Lower Than 1 \n";
 
-}
+    }
 
-/// Capital Asset Pricing Model (CAPM) Function
-void CapitalAssetPricingModelCAPM()
-{
-        cout<<fixed<<setprecision(1);
-         ld Rj , Rf , B , Rm ;
-        cout<<"Please Enter Risk-Free Rate Of Return\n";
-        cin>>Rf;
-        cout<<"Please Enter Beta Of Asset\n";
-        cin>>B;
-        cout<<"Please Enter Market Rate Of Return\n";
-        cin>>Rm;
-        cout<<"Market Risk Premium Is "<<(Rm - Rf)<<"%\n";
-        cout<<"Asset Risk Premium  Is "<<(B * (Rm - Rf))<<"%\n";
-        Rj = Rf + (B * (Rm - Rf));
-        cout<<"Required Rate Of Return For This Asset Is "<<Rj<<"%\n";
-}
+    /// Capital Asset Pricing Model (CAPM) Function
+    void CapitalAssetPricingModelCAPM()
+    {
+            cout<<fixed<<setprecision(1);
+            ld Rj , Rf , B , Rm ;
+            cout<<"Please Enter Risk-Free Rate Of Return\n";
+            cin>>Rf;
+            cout<<"Please Enter Beta Of Asset\n";
+            cin>>B;
+            cout<<"Please Enter Market Rate Of Return\n";
+            cin>>Rm;
+            cout<<"Market Risk Premium Is "<<(Rm - Rf)<<"%\n";
+            cout<<"Asset Risk Premium  Is "<<(B * (Rm - Rf))<<"%\n";
+            Rj = Rf + (B * (Rm - Rf));
+            cout<<"Required Rate Of Return For This Asset Is "<<Rj<<"%\n";
+    }
 
 };
 
@@ -870,17 +870,17 @@ void CapitalAssetPricingModelCAPM()
 class Chapter5
 {
 public:
-
+    ///Present Value Interest Factor For Annuity (PVIFA) Function
     ld PVIFA(ld Rj , ll n)
     {
     return (1-(1/pow((1+Rj),n)))/Rj;
     }
-
+    ///Present Value Interest Factor (PVIF) Function
     ld PVIF(ld Rj , ll n)
     {
     return 1/(pow((1+Rj),n));
     }
-
+    ///Bond's Value Using Present Value Of Expected Cash Flow + Par Value Of Bond At Maturity Discounted At Required Rate Of Return
     void BondValue()
     {
     short BondType;
@@ -953,18 +953,18 @@ else if(BondType == 2)
     {
     cout<<"\t Selling At Premium\n";
     }
-    else cout<<"\t Selling At Dicount\n";
+    else cout<<"\t Selling At Discount\n";
     }
-}
-else
-{
-    cout<<"Please Make Sure That You Have Entered (1) OR (2)\n";
-    goto HERE;
-}
-
+    }
+    else
+    {
+        cout<<"Please Make Sure That You Have Entered (1) OR (2)\n";
+        goto HERE;
     }
 
-    //Current Yield (CY) Function
+    }
+
+    ///Current Yield (CY) Function
     void CurrentYield()
     {
         ld AnnualInterest , MarketPrice , CY;
@@ -975,6 +975,7 @@ else
         CY = AnnualInterest/MarketPrice;
         cout<<"Current Yield (CY) Is "<<CY * 100<<"%\n";
     }
+    ///Yield To Maturity (YTM) Function
     void YieldToMaturity()
     {
         ld Interest , MarketPrice ,NoOfYears , YTM;
@@ -993,7 +994,7 @@ else
 class Chapter6
 {
     public:
-        //Zero Growth Model Function
+        ///Zero Growth Model Function
         void ZeroGrowthModel()
         {
             ld D1 , Rs ,P0;
@@ -1004,7 +1005,7 @@ class Chapter6
             P0 = D1/Rs;
             cout<<"Value Of Share Is "<<P0 * 100<<" EGP/Share\n";
         }
-        //Constant Growth Model (Gordon Model) Function
+        ///Constant Growth Model (Gordon Model) Function
         void GordonModel()
         {
            ld D1 , D0 , Rs ,P0, g ,Choice;
@@ -1018,18 +1019,18 @@ class Chapter6
             g /= 100;
             cout<<"Please Enter Most Recent Dividend (D0)\n";
             cin>>D0;
-            D1 = D0 * (1+g);
+            D1 = D0 * (1 + g);
             cout<<"Please Enter Required Rate Of Return\n";
             cin>>Rs;
             Rs /= 100 ;
-             P0 = D1/(Rs - g);
+            P0 = D1/(Rs - g);
             cout<<"Value Of Share Is "<<P0<<" EGP/Share\n";
            }
            else if(Choice == 2)
            {
-               cout<<fixed<<setprecision(5);
-               short NoOfYears;
-               ld DFirst , DLast;
+            cout<<fixed<<setprecision(5);
+            short NoOfYears;
+            ld DFirst , DLast;
             cout<<"Please Enter Number Of Years\n";
             cin>>NoOfYears;
             NoOfYears--;
@@ -1039,7 +1040,7 @@ class Chapter6
             cin>>DLast;
             g = pow(DFirst/DLast , (1.0/NoOfYears) ) - 1;
             g = ( round(g * 100) ) / 100;
-            D1 = DFirst * (1+g);
+            D1 = DFirst * (1 + g);
             cout<<"Please Enter Required Rate Of Return\n";
             cin>>Rs;
             Rs /= 100 ;
@@ -1053,12 +1054,12 @@ class Chapter6
            }
 
         }
-        // Present Value Interest Factor (PVIF) Function
+        ///Present Value Interest Factor (PVIF) Function
         ld PVIF(ld Rj , ll n)
         {
         return 1/(pow((1+Rj),n));
         }
-        //Variable Growth Model Function
+        ///Variable Growth Model Function
         void VariableGrowthModel()
         {
             ld D0 , Rs , ShareValue = 0;
@@ -1112,7 +1113,6 @@ class Chapter6
                     //cout<<"THIS IS Gordon  "<<Gordon<<"\n";
                      break;
                  }
-
                 else
                 {
                     cout<<"Please Make Sure That Text Is Correctly Typed\n";
@@ -1121,16 +1121,15 @@ class Chapter6
                 i++;
             }
 
-            for(ll i = 1;i<(ll)Dividends.size();i++)
+            for(ll i = 1;i < (ll)Dividends.size();i++)
             {
                 //cout<<"THIS IS DIV VECTOR "<<Dividends[i]<<"\n";
-                if(i == (Dividends.size()-1) ) ShareValue += ( Dividends[i]*PVIF(Rs , i-1 ) );
-                else
-                ShareValue += ( Dividends[i]*PVIF(Rs , i) );
+                if(i == (ll)(Dividends.size()-1) ) ShareValue += ( Dividends[i]*PVIF(Rs , i-1 ) );
+                else ShareValue += ( Dividends[i]*PVIF(Rs , i) );
             }
             cout<<"Share Price Is"<<ShareValue<<"EGP\n";
         }
-    //Free Cash Flow Model Function
+      ///Free Cash Flow Model Function
       void FreeCashFlowModel()
       {
             ld InfiniteGrowth , WACC , Vs , Vd , Vp , Vc = 0 , NoOfShares , NoOfYears , ShareValue;
@@ -1174,7 +1173,7 @@ class Chapter6
             ShareValue = Vs/NoOfShares;
             cout<<"Value Of Common Stock Share Is "<<ShareValue<<"EGP/Share\n";
       }
-      //Book Value Per Share Function
+      ///Book Value Per Share Function
       void BookValuePerShare()
       {
         ld TotalAssets , TotalLiab , NoOfCommonStock , BVPS ;
@@ -1187,7 +1186,7 @@ class Chapter6
         BVPS = (TotalAssets - TotalLiab) / NoOfCommonStock;
         cout<<"Book Value Per Share (BVPS) Is "<<BVPS<<" EGP/Share\n";
       }
-      //Liquidation Value Per Share Function
+      ///Liquidation Value Per Share Function
       void LiquidationValuePerShare()
       {
         ld TotalAssets , TotalLiab , NoOfCommonStock , LVPS , Percent ;
@@ -1203,7 +1202,7 @@ class Chapter6
         LVPS = ( (TotalAssets * Percent) - TotalLiab) / NoOfCommonStock;
         cout<<"Liquidation Value Per Share (LVPS) Is "<<LVPS<<" EGP/Share\n";
       }
-      //Price/Earnings Ratio (EPS Multiplayer) Valuation Function
+      ///Price/Earnings Ratio (EPS Multiplayer) Valuation Function
       void PriceEarningsRatioValuation()
       {
         ld PE , EPS , ShareValue;
@@ -1218,8 +1217,8 @@ class Chapter6
 class Chapter7
 {
     public:
-
-            void CostOfLongTermDebtCurrentYeild()
+            ///Cost Of Long-Term Debt Using Current Yield (CY) Function
+            void CostOfLongTermDebtCurrentYield()
         {
             ld BondValue , ParValue , CouponRate , I , Rd , Ri , Tax;
             cout<<"Please Enter Par Value Of Bond\n";
@@ -1237,7 +1236,7 @@ class Chapter7
             cout<<"Cost Of Long-Term Debt Before Tax Is "<<Rd * 100<<"%\n";
             cout<<"Cost Of Long-Term Debt After Tax Is "<<Ri * 100<<"%\n";
         }
-
+        ///Cost Of Long-Term Debt Function
         void CostOfLongTermDebt()
         {
             ld ParValue , CouponRate , I , Nd , FlotationCost , UnderPricingCost , NoOfYears , Rd , Ri , Tax;
@@ -1262,7 +1261,7 @@ class Chapter7
             cout<<"Cost Of Long-Term Debt Before Tax Is "<<Rd * 100<<"%\n";
             cout<<"Cost Of Long-Term Debt After Tax Is "<<Ri * 100<<"%\n";
         }
-
+        ///Cost Of Common Stock Equity Function
         void CostOfCommonStockEquity()
         {
             short Method;
@@ -1303,7 +1302,7 @@ class Chapter7
                 goto HERE;
             }
         }
-
+        ///Cost Of New Issue Of Common Stock Function
         void CostOfNewIssueOfCommonStock()
         {
             ld  Nn , D1 , D0 , g , P0, FlotationCost , UnderPricingCost , Rn;
@@ -1323,6 +1322,7 @@ class Chapter7
             //cout<<"THIS IS Nd"<<Nd<<"\n";
             cout<<"Cost Of New Issue Of Common Stock Is "<<Rn * 100<<"%\n";
         }
+        ///Weighted Average Cost Of Capital (WACC) Function
         void WeightedAverageCostOfCapital()
         {
             ld  WACC , Wi , Ri , Ws , Rs;
@@ -1341,25 +1341,26 @@ class Chapter7
 class Chapter8
 {
     public:
-        ///
+        ///Present Value Interest Factor For Annuity (PVIFA) Function
         ld PVIFA(ld Rj , ll n)
         {
         return (1-(1/pow((1+Rj),n)))/Rj;
         }
-        ///
+        ///Present Value Interest Factor (PVIF) Function
         ld PVIF(ld Rj , ll n)
-          {
-            return 1/(pow((1+Rj),n));
-           }
-           ld FVIFA(ld Rj , ll n)
-          {
-            return (pow((1+Rj),n)-1)/Rj;
-           }
-           ///
+        {
+        return 1/(pow((1+Rj),n));
+        }
+        ///Future Value Interest Factor For Annuity (FVIFA) Function
+        ld FVIFA(ld Rj , ll n)
+        {
+        return (pow((1+Rj),n)-1)/Rj;
+        }
+        ///Present Value Function
         ld PresentValue(vector<ld>&CashFlow,ld &sz, ld IRR)
         {
-           ld res = 0;
-            for(ll i = 0;i<(ll)sz;i++) res += ( CashFlow[i] * PVIF(IRR , i+1) );
+            ld res = 0;
+            for(ll i = 0;i < (ll)sz;i++) res += ( CashFlow[i] * PVIF(IRR , i+1) );
             return res;
         }
         ld FutureValue(vector<ld>&CashFlow,ld &sz, ld WACC)
@@ -1368,7 +1369,8 @@ class Chapter8
             for(ll i = 0 , j = (ll)sz-1 ;i<(ll)sz;i++,j--) res += ( CashFlow[i] * pow((1 + WACC) , j ) );
             return res;
         }
-        ///
+
+       ///Net Present Value (NPV) Function
        void NetPresentValueNPV()
         {
         ld NPV , InitialInvestment , NoOfYears , PresentValue1 , WACC;
@@ -1422,7 +1424,7 @@ class Chapter8
         }
 
         }
-        ///
+        ///Profitability Index (PI) Function
         void ProfitabilityIndexPI()
         {
         ld PI , InitialInvestment , NoOfYears , PresentValue1 , WACC;
@@ -1485,7 +1487,6 @@ class Chapter8
         cin>>FixedCashFlow;
         CashFlow.insert(CashFlow.begin(),(ll)NoOfYears,FixedCashFlow);
         }
-    ///Just change Initial Investment Of Your Project
     else
     {
          for(ll i = 1;i <= NoOfYears ;i++)
@@ -1514,7 +1515,7 @@ class Chapter8
     }
         }
 
-        ///
+        ///Modified Internal Rate Of Return (MIRR) Function
         void ModifiedInternalRateOfReturnMIRR()
         {
         cout<<fixed<<setprecision(2);
@@ -1536,7 +1537,6 @@ class Chapter8
         cin>>FixedCashFlow;
        FutureValue1 = FixedCashFlow * FVIFA(WACC/100,NoOfYears);
         }
-    ///Just change Initial Investment Of Your Project
     else
     {
          for(ll i = 1;i <= NoOfYears ;i++)
@@ -1566,7 +1566,7 @@ class Chapter8
     }
         }
 
-        ///
+        ///Payback Period (PB) Function
         void PaybackPeriodPB()
         {
         ld PB , InitialInvestment , NoOfYears , MaxYear;
@@ -1584,7 +1584,7 @@ class Chapter8
         ld FixedCashFlow;
         cout<<"Please Enter Fixed Cash Flow\n";
         cin>>FixedCashFlow;
-        PB =  InitialInvestment / FixedCashFlow;
+        PB = InitialInvestment / FixedCashFlow;
         }
         else
         {
@@ -1607,7 +1607,7 @@ class Chapter8
            i--;
            PB = i + (Dec/10);
         }
-        cout<<"PaybackPeriod (PB) Of Project Is "<<PB<<" Year(s)\n";
+        cout<<"Payback Period (PB) Of Project Is "<<PB<<" Year(s)\n";
        if(PB<=MaxYear)
         {
           cout<<"You Should Accept This Project As PaybackPeriod (PB) Of Project Is Lower Than Maximum Acceptable Number Of Years\n";
@@ -1618,10 +1618,62 @@ class Chapter8
         }
         }
 
-        ///
-         void DiscontedPaybackPeriodDPB()
+        ///Discounted Payback Period (DPB) Function
+         void DiscountedPaybackPeriodDPB()
         {
-
+        cout<<fixed<<setprecision(3);
+        vector<ld>CashFlow;
+        ld DPB , InitialInvestment , NoOfYears , MaxYear , WACC;
+        bool IsCashFlowFixed;
+        cout<<"Please Enter Initial Investment Of Project\n";
+        cin>>InitialInvestment;
+        cout<<"Please Enter Number Of Years Project Is Expected To Generate Cash Flow\n";
+        cin>>NoOfYears;
+        cout<<"Please Enter Weighted Average Cost Of Capital (WACC) \n";
+        cin>>WACC;
+        cout<<"Please Enter Maximum Acceptable Number Of Years\n";
+        cin>>MaxYear;
+        cout<<"Is Cash Flow Fixed Every Year (Type 1 If Yes 0 If No)\n";
+        cin>>IsCashFlowFixed;
+        if(IsCashFlowFixed)
+        {
+        ld FixedCashFlow;
+        cout<<"Please Enter Fixed Cash Flow\n";
+        cin>>FixedCashFlow;
+        CashFlow.insert(CashFlow.begin(),(ll)NoOfYears,FixedCashFlow);
+      //PB =  InitialInvestment / FixedCashFlow;
+        }
+        else
+        {
+            for(ll i = 1;i <= NoOfYears ;i++)
+            {
+            ld Cash;
+            cout<<"Please Enter Cash Flow Of Year "<<i<<"\n";
+            cin>>Cash;
+            CashFlow.emplace_back(Cash);
+            }
+        }
+            ll i = 0;
+            ld Dec;
+           while(InitialInvestment>0)
+           {
+               ld PresentValueOfCashFlow = (CashFlow[i] * PVIF(WACC/100,i+1)) ;
+            if(CashFlow[i] > InitialInvestment) Dec = ( InitialInvestment/PresentValueOfCashFlow ) * 12;
+            InitialInvestment -= (PresentValueOfCashFlow);
+            //cout<<"CAHSFLOW "<<(CashFlow[i] * PVIF(WACC/100,i+1))<<"\n";
+            i++;
+           }
+            i--;
+           DPB = i + (Dec/10);
+        cout<<"Discounted Payback Period (PB) Of Project Is "<<DPB<<" Year(s)\n";
+       if(DPB <= MaxYear)
+        {
+          cout<<"You Should Accept This Project As Discounted PaybackPeriod (DPB) Of Project Is Lower Than Maximum Acceptable Number Of Years\n";
+        }
+        else
+        {
+        cout<<"You Should Reject This Project As Discounted PaybackPeriod (DPB) Of Project Is Higher Than Maximum Acceptable Number Of Years\n";
+        }
         }
 
 };
@@ -1629,59 +1681,242 @@ class Chapter8
 
 int main()
 {
+    short CH;
     cout<<fixed<<setprecision(3);
-    ///CH3 Class & Functions
-    //Chapter3 test;
-    //test.Liquidity();
-    //test.Activity();
-    //test.Debt();
-    //test.Profitability();
-    //test.Market();
-    //test.FreeCashFlow();
-    ///------------------------
-    ///CH4 Class & Functions
-    //Chapter4 test;
-    //test.RateOfReturn();
-    //test.Range();
-    //test.ProjectRiskReturn();
-    //test.CoefficientOfVariance();
-    //test.PortfolioReturn();
-    //test.PortfolioRisk();
-    //test.PortfolioBeta();
-    //test.CapitalAssetPricingModelCAPM();
-    ///------------------------
-    ///CH5 Class & Functions
-    //Chapter5 test;
-    //test.BondValue();
-    //test.CurrentYield();
-    //test.YieldToMaturity();
-    ///------------------------
-    ///CH6 Class & Functions
-    //Chapter6 test;
-    //test.ZeroGrowthModel();
-    //test.GordonModel();
-    //test.VariableGrowthModel();
-    //test.FreeCashFlowModel();
-    //test.BookValuePerShare();
-    //test.LiquidationValuePerShare();
-    //test.PriceEarningsRatioValuation();
-    ///------------------------
-    ///CH7 Class & Functions
-    //Chapter7 test;
-    //test.CostOfLongTermDebtCurrentYeild();
-    //test.CostOfLongTermDebt();
-    //test.CostOfCommonStockEquity();
-    //test.CostOfNewIssueOfCommonStock();
-    //test.WeightedAverageCostOfCapital();
-    ///------------------------
-    ///CH8 Class & Functions
-    Chapter8 test;
-    //test.NetPresentValueNPV();
-    //test.ProfitabilityIndexPI();
-    //test.InternalRateOfReturnIRR();
-    //test.ModifiedInternalRateOfReturnMIRR();
-    //test.PaybackPeriodPB();
-    test.DiscontedPaybackPeriodDPB();
-    cout << "Hello world!" << endl;
+    cout<<"\t\t\t\t\t\t\t\t\t***********************\n";
+    cout<<"\t\t\t\t\t\t\t\t\t Financial Calculator\n";
+    cout<<"\t\t\t\t\t\t\t\t\t***********************\n\n\n";
+    __POINT:
+    cout<<"Please Enter Chapter Number (3),(4),(5),(6),(7),(8)\n";
+    cin>>CH;
+    if(CH == 3)
+    {
+            short CHOICE3;
+             __HERE3:
+             cout<<"Please Enter Option Number (1),(2),(3),(4),(5),(6)\n";
+             cin>>CHOICE3;
+            ///CH3 Class & Functions
+            Chapter3 CH3;
+            if(CHOICE3 == 1)
+            {
+                CH3.Liquidity();
+            }
+            else if(CHOICE3 == 2)
+            {
+               CH3.Activity();
+            }
+             else if(CHOICE3 == 3)
+            {
+                CH3.Debt();
+            }
+             else if(CHOICE3 == 4)
+            {
+                CH3.Profitability();
+            }
+             else if(CHOICE3 == 5)
+            {
+                CH3.Market();
+            }
+             else if(CHOICE3 == 6)
+            {
+                CH3.FreeCashFlow();
+            } else
+            {
+                cout<<"Please Make Sure That You Have Entered Chapter Number (1),(2),(3),(4),(5),(6)n";
+                goto __HERE3;
+            }
+
+    }
+    else if(CH == 4)
+    {
+             short CHOICE4;
+             __HERE4:
+             cout<<"Please Enter Option Number (1),(2),(3),(4),(5),(6),(7),(8)\n";
+             cin>>CHOICE4;
+            ///CH4 Class & Functions
+            Chapter4 CH4;
+            if(CHOICE4 == 1)
+            {
+                CH4.RateOfReturn();
+            }
+            else if(CHOICE4 == 2)
+            {
+               CH4.Range();
+            }
+             else if(CHOICE4 == 3)
+            {
+               CH4.ProjectRiskReturn();
+            }
+             else if(CHOICE4 == 4)
+            {
+                CH4.CoefficientOfVariance();
+            }
+             else if(CHOICE4 == 5)
+            {
+                CH4.PortfolioReturn();
+            }
+             else if(CHOICE4 == 6)
+            {
+                CH4.PortfolioRisk();
+            }
+             else if(CHOICE4 == 7)
+            {
+                CH4.PortfolioBeta();
+            }
+            else if(CHOICE4 == 8)
+            {
+                CH4.CapitalAssetPricingModelCAPM();
+            }
+            else
+            {
+                cout<<"Please Make Sure That You Have Entered Chapter Number (1),(2),(3),(4),(5),(6),(7),(8)n";
+                goto __HERE4;
+            }
+    }
+    else if(CH == 5)
+    {
+             short CHOICE5;
+             __HERE5:
+             cout<<"Please Enter Option Number (1),(2),(3)n";
+             cin>>CHOICE5;
+            ///CH5 Class & Functions
+            Chapter5 CH5;
+            if(CHOICE5 == 1)
+            {
+                CH5.BondValue();
+            }
+            else if(CHOICE5 == 2)
+            {
+               CH5.CurrentYield();
+            }
+             else if(CHOICE5 == 3)
+            {
+               CH5.YieldToMaturity();
+            }
+            else
+            {
+                cout<<"Please Make Sure That You Have Entered Chapter Number (1),(2),(3)\n";
+               goto __HERE5;
+            }
+    }
+    else if(CH == 6)
+    {
+             short CHOICE6;
+             __HERE6:
+             cout<<"Please Enter Option Number (1),(2),(3),(4),(5),(6),(7)\n";
+             cin>>CHOICE6;
+            ///CH6 Class & Functions
+            Chapter6 CH6;
+            if(CHOICE6 == 1)
+            {
+                CH6.ZeroGrowthModel();
+            }
+            else if(CHOICE6 == 2)
+            {
+               CH6.GordonModel();
+            }
+             else if(CHOICE6 == 3)
+            {
+               CH6.VariableGrowthModel();
+            }
+             else if(CHOICE6 == 4)
+            {
+                CH6.FreeCashFlowModel();
+            }
+             else if(CHOICE6 == 5)
+            {
+                CH6.BookValuePerShare();
+            }
+             else if(CHOICE6 == 6)
+            {
+                CH6.LiquidationValuePerShare();
+            }
+             else if(CHOICE6 == 7)
+            {
+                CH6.PriceEarningsRatioValuation();
+            }
+            else
+            {
+                cout<<"Please Make Sure That You Have Entered Chapter Number (1),(2),(3),(4),(5),(6),(7)\n";
+                goto __HERE6;
+            }
+    }
+    else if(CH == 7)
+    {
+             short CHOICE7;
+             __HERE7:
+             cout<<"Please Enter Option Number (1),(2),(3),(4),(5)\n";
+             cin>>CHOICE7;
+            ///CH7 Class & Functions
+            Chapter7 CH7;
+            if(CHOICE7 == 1)
+            {
+                CH7.CostOfLongTermDebtCurrentYield();
+            }
+            else if(CHOICE7 == 2)
+            {
+               CH7.CostOfLongTermDebt();
+            }
+             else if(CHOICE7 == 3)
+            {
+               CH7.CostOfCommonStockEquity();
+            }
+             else if(CHOICE7 == 4)
+            {
+                CH7.CostOfNewIssueOfCommonStock();
+            }
+             else if(CHOICE7 == 5)
+            {
+                CH7.WeightedAverageCostOfCapital();
+            }
+             else
+            {
+                cout<<"Please Make Sure That You Have Entered Chapter Number (1),(2),(3),(4),(5)\n";
+               goto __HERE7;
+            }
+    }
+    else if(CH == 8)
+    {
+             short CHOICE8;
+             __HERE8:
+             cout<<"Please Enter Chapter Number (1),(2),(3),(4),(5),(6)\n";
+             cin>>CHOICE8;
+            ///CH8 Class & Functions
+            Chapter8 CH8;
+            if(CHOICE8 == 1)
+            {
+                CH8.NetPresentValueNPV();
+            }
+            else if(CHOICE8 == 2)
+            {
+               CH8.ProfitabilityIndexPI();
+            }
+             else if(CHOICE8 == 3)
+            {
+               CH8.InternalRateOfReturnIRR();
+            }
+             else if(CHOICE8 == 4)
+            {
+                CH8.ModifiedInternalRateOfReturnMIRR();
+            }
+             else if(CHOICE8 == 5)
+            {
+                CH8.PaybackPeriodPB();
+            }
+             else if(CHOICE8 == 6)
+            {
+                CH8.DiscountedPaybackPeriodDPB();
+            }
+             else
+            {
+                cout<<"Please Make Sure That You Have Entered Chapter Number (1),(2),(3),(4),(5),(6)\n";
+                goto __HERE8;
+            }
+    }
+    else
+    {
+        cout<<"Please Make Sure That You Have Entered (3),(4),(5),(6),(7),(8)\n";
+        goto __POINT;
+    }
     return 0;
 }
