@@ -1,7 +1,9 @@
 /*
 Ahmed Arafat
 Business Information System
+ahmedmoyousry.bis@gmail.com
 3-2021
+I Can Do This All Day
 */
 #include <bits/stdc++.h>
 typedef long long ll;
@@ -1356,6 +1358,11 @@ class Chapter8
         {
         return (pow((1+Rj),n)-1)/Rj;
         }
+        ///Future Value Interest Factor (FVIF) Function
+         ld FVIF(ld Rj , ll n)
+        {
+        return pow((1+Rj),n);
+        }
         ///Present Value Function
         ld PresentValue(vector<ld>&CashFlow,ld &sz, ld IRR)
         {
@@ -1693,7 +1700,7 @@ int main()
     {
             short CHOICE3;
              __HERE3:
-             cout<<"Please Enter Option Number (1),(2),(3),(4),(5),(6)\n";
+             cout<<"Please Enter Option Number :\n(1)For Liquidity Ratio\n(2)For Activity Ratio\n(3)For Debt Ratio\n(4)For Profitability Ratio\n(5)For Market Ratio\n(6)For FreeCashFlow (FCF)\n";
              cin>>CHOICE3;
             ///CH3 Class & Functions
             Chapter3 CH3;
@@ -1722,7 +1729,7 @@ int main()
                 CH3.FreeCashFlow();
             } else
             {
-                cout<<"Please Make Sure That You Have Entered Chapter Number (1),(2),(3),(4),(5),(6)n";
+                cout<<"Please Make Sure That You Have Entered Option Number (1),(2),(3),(4),(5),(6)n";
                 goto __HERE3;
             }
 
@@ -1731,7 +1738,7 @@ int main()
     {
              short CHOICE4;
              __HERE4:
-             cout<<"Please Enter Option Number (1),(2),(3),(4),(5),(6),(7),(8)\n";
+             cout<<"Please Enter Option Number :\n(1)For Rate Of Return\n(2)For Range\n(3)For Project Risk/Return\n(4)For Coefficient Of Variance (CV)\n(5)For Portfolio Return\n(6)For Portfolio Risk\n(7)For Portfolio Beta\n(8)For Capital Asset Pricing Model (CAPM)\n";
              cin>>CHOICE4;
             ///CH4 Class & Functions
             Chapter4 CH4;
@@ -1769,7 +1776,7 @@ int main()
             }
             else
             {
-                cout<<"Please Make Sure That You Have Entered Chapter Number (1),(2),(3),(4),(5),(6),(7),(8)n";
+                cout<<"Please Make Sure That You Have Entered Option Number (1),(2),(3),(4),(5),(6),(7),(8)n";
                 goto __HERE4;
             }
     }
@@ -1777,7 +1784,7 @@ int main()
     {
              short CHOICE5;
              __HERE5:
-             cout<<"Please Enter Option Number (1),(2),(3)n";
+             cout<<"Please Enter Option Number :\n(1)For Bond Value(Perpetual Or Maturity)\n(2)For Current Yield (CV)\n(3)For Yield To Maturity (YTM)\n";
              cin>>CHOICE5;
             ///CH5 Class & Functions
             Chapter5 CH5;
@@ -1795,7 +1802,7 @@ int main()
             }
             else
             {
-                cout<<"Please Make Sure That You Have Entered Chapter Number (1),(2),(3)\n";
+                cout<<"Please Make Sure That You Have Option Number (1),(2),(3)\n";
                goto __HERE5;
             }
     }
@@ -1803,7 +1810,7 @@ int main()
     {
              short CHOICE6;
              __HERE6:
-             cout<<"Please Enter Option Number (1),(2),(3),(4),(5),(6),(7)\n";
+             cout<<"Please Enter Option Number : \n(1)For Zero Growth Model\n(2)For Constant Growth (Gordon) Model\n(3)For Variable Growth Model\n(4)For Free Cash Flow Model\n(5)For Book Value Per Share(BVPS)\n(6)For Liquidation Value Per Share\n(7)For Price Earnings (P/E) Ratio Valuation\n";
              cin>>CHOICE6;
             ///CH6 Class & Functions
             Chapter6 CH6;
@@ -1837,7 +1844,7 @@ int main()
             }
             else
             {
-                cout<<"Please Make Sure That You Have Entered Chapter Number (1),(2),(3),(4),(5),(6),(7)\n";
+                cout<<"Please Make Sure That You Have Entered Option Number (1),(2),(3),(4),(5),(6),(7)\n";
                 goto __HERE6;
             }
     }
@@ -1845,7 +1852,7 @@ int main()
     {
              short CHOICE7;
              __HERE7:
-             cout<<"Please Enter Option Number (1),(2),(3),(4),(5)\n";
+             cout<<"Please Enter Option Number : \n(1)For Cost Of Long-Term Debt (Using Current Yield (CV))\n(2)For Cost Of Long-Term Debt\n(3)For Cost Of Common Stock Equity\n(4)For Cost Of New Issue Of Common Stock\n(5)For Weighted Average Cost Of Capital (WACC)\n";
              cin>>CHOICE7;
             ///CH7 Class & Functions
             Chapter7 CH7;
@@ -1871,7 +1878,7 @@ int main()
             }
              else
             {
-                cout<<"Please Make Sure That You Have Entered Chapter Number (1),(2),(3),(4),(5)\n";
+                cout<<"Please Make Sure That You Have Entered Option Number (1),(2),(3),(4),(5)\n";
                goto __HERE7;
             }
     }
@@ -1879,7 +1886,7 @@ int main()
     {
              short CHOICE8;
              __HERE8:
-             cout<<"Please Enter Chapter Number (1),(2),(3),(4),(5),(6)\n";
+             cout<<"Please Enter Option Number : \n(1)For Net Present Value (NPV)\n(2)For Profitability Index (PI)\n(3)For Internal Rate Of Return (IRR)\n(4)For Modified Internal Rate Of Return (MIRR)\n(5)For Payback Period (PB)\n(6)For Discounted Payback Period (DPB)\n";
              cin>>CHOICE8;
             ///CH8 Class & Functions
             Chapter8 CH8;
@@ -1909,13 +1916,13 @@ int main()
             }
              else
             {
-                cout<<"Please Make Sure That You Have Entered Chapter Number (1),(2),(3),(4),(5),(6)\n";
+                cout<<"Please Make Sure That You Have Entered Option Number (1),(2),(3),(4),(5),(6)\n";
                 goto __HERE8;
             }
     }
     else
     {
-        cout<<"Please Make Sure That You Have Entered (3),(4),(5),(6),(7),(8)\n";
+        cout<<"Please Make Sure That You Have Entered (3),(4),(5),(6),(7) OR (8)\n";
         goto __POINT;
     }
     return 0;
