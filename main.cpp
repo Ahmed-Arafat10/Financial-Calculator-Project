@@ -1776,7 +1776,7 @@ int main()
             }
             else
             {
-                cout<<"Please Make Sure That You Have Entered Option Number (1),(2),(3),(4),(5),(6),(7),(8)n";
+                cout<<"Please Make Sure That You Have Entered Option Number (1),(2),(3),(4),(5),(6),(7),(8)\n";
                 goto __HERE4;
             }
     }
