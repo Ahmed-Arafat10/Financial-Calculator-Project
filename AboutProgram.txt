@@ -11,7 +11,7 @@ Chapter 3: Financial Ratios
 -> Liquidity Ratio
 Current Ratio
 Quick Ratio
--> Activity
+-> Activity Ratio
 Intentory Turnover
 Average Age Of Inventory
 Average Collection Period
