@@ -75,7 +75,7 @@ Chapter 7: Cost Of Capital
 Cost Of Long-Term Debt (Current Yield (CY))
 Cost Of Long-Term Debt
 Cost Of Common Stock Equity
-Cost Of Common Retained Earnings
+Cost Of Retained Earnings
 Cost Of New Issue Of Common Stock
 Weighted Average Cost Of Capital(WACC)
 ----------------------------
