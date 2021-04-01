@@ -2,7 +2,7 @@ This Program Is Used To Calculate Simple & Complex Equations In Finance (College
 Using C++ , OOP , Data Structure & Algorithms .. I Hope This Program Helps Other Students While Studying Finance in Calculating
 Complex Equations & Checking Their Answer With The Correct One In Just Few Seconds 
 Anyone Can Use It :)
-All Copy Are Reserved To Me ^-^
+All Copyrights Are Reserved To Me ^-^
 Features Of Program:
 Chapter 1/2 Theoretical (No Calculation Is Needed)
 ---------------------------
