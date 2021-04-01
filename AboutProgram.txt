@@ -8,7 +8,7 @@ Chapter 1/2 Theoretical (No Calculation Is Needed)
 ---------------------------
 Chapter 3: Financial Ratios
 --------------------------- 
--> liquidity 
+-> Liquidity Ratio
 Current Ratio
 Quick Ratio
 -> Activity
@@ -17,19 +17,19 @@ Average Age Of Inventory
 Average Collection Period
 Average Payment Period
 Total Asset Turnover
--> Debt
+-> Debt Ratio
 Debt Ratio
 Debt-To-Equity Ratio
 Equity Multiplier (EM)
 Times Interest Earned Ratio
 Fixed-Payment Coverage Ratio (FPCR)
--> Profitability
+-> Profitability Ratio
 Gross Profit Margin
 Operating Profit Margin
 Net Profit Margin
 Return On Assets (ROA/ROI)
 Return On Equity (ROE)
--> Market
+-> Market Ratio
 Price/Earnings Ratio (P/E)
 Earnings Per Share (EPS)
 Price/Book Value Ratio (P/BV)
