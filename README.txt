@@ -45,7 +45,7 @@ Rate Of Return For An Asset
 Range
 Risk/Return For Investment (Historical or Prediction)
 Coefficient Of Variance (CV)
-Correlation/Covariance 
+Correlation/Covariance (COV)
 Risk/Return For Portfolio 
 Beta Coefficient For Portfolio
 Capital Asset Pricing Model (CAPM)
