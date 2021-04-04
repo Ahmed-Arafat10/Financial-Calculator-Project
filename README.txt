@@ -81,8 +81,8 @@ Weighted Average Cost Of Capital (WACC)
 ----------------------------
 Chapter 8: Capital Budgeting
 ----------------------------
-Present Value Function
-Future Value Function
+Present Value Function (PV)
+Future Value Function (FV)
 Net Present Value (NPV)
 Profitability Index (PI)
 Internal Rate Of Return (IRR)
