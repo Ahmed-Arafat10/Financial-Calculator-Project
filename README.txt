@@ -20,7 +20,7 @@ Total Asset Turnover
 -> Debt Ratio
 Debt Ratio
 Debt-To-Equity Ratio
-Equity Multiplier (EM)
+Equity Multiplier (EM) Ratio
 Times Interest Earned Ratio
 Fixed-Payment Coverage Ratio (FPCR)
 -> Profitability Ratio
