@@ -65,7 +65,7 @@ Chapter 6: Stock Valuation
 Zero Growth Model (Common Stock / Preferred Stock)
 Constant Growth (Gordon) Model 
 Variable Growth Model 
-Free Cash Flow (FCF)Model
+Free Cash Flow (FCF) Model
 Book Value Per Share (BVPS)
 Liquidation Value Per Share
 Price Earnings (P/E) Ratio Valuation
