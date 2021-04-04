@@ -73,10 +73,10 @@ Price Earnings (P/E) Ratio Valuation
 Chapter 7: Cost Of Capital
 --------------------------
 Cost Of Long-Term Debt (Current Yield (CY))
-Cost Of Long-Term Debt
-Cost Of Common Stock Equity
-Cost Of Retained Earnings
-Cost Of New Issue Of Common Stock
+Cost Of Long-Term Debt (Ri)
+Cost Of Common Stock Equity (Rs)
+Cost Of Retained Earnings (Rr)
+Cost Of New Issue Of Common Stock (Rn)
 Weighted Average Cost Of Capital (WACC)
 ----------------------------
 Chapter 8: Capital Budgeting
