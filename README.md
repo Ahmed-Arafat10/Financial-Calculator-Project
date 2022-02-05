@@ -1,8 +1,8 @@
 - This Program Is Used To Calculate Simple & Complex Equations In Finance (College Course)
-Using C++ , OOP , Data Structure & Algorithms .. I Hope This Program Helps Other Students While Studying Finance in Calculating
+Using **C++** , **OOP** , **Data Structure & Algorithms** .. I Hope This Program Helps Other Students While Studying Finance in Calculating
 Complex Equations & Checking Their Answer With The Correct One In Just Few Seconds 
-Anyone Can Use It :)
-All Copyrights Are Reserved To Me ^-^
+- Anyone Can Use It :)
+- All Copyrights Are Reserved To Me ^-^
 
 ## Features Of Program:
 
@@ -12,31 +12,34 @@ All Copyrights Are Reserved To Me ^-^
 # Chapter 3: Financial Ratios
 -----------------------------
 
-### Liquidity Ratio
+### Liquidity Ratio :
 - Current Ratio
 - Quick Ratio
-### Activity Ratio
+
+### Activity Ratio :
+
 - Intentory Turnover
 - Average Age Of Inventory
 - Average Collection Period
 - Average Payment Period
 - Total Asset Turnover
 
-### Debt Ratio
+### Debt Ratio :
+
 - Debt Ratio
 - Debt-To-Equity Ratio
 - Equity Multiplier (EM) Ratio
 - Times Interest Earned Ratio
 - Fixed-Payment Coverage Ratio **(FPCR)**
 
-### Profitability Ratio
+### Profitability Ratio :
 - Gross Profit Margin
 - Operating Profit Margin
 - Net Profit Margin
 - Return On Assets **(ROA/ROI)**
 - Return On Equity **(ROE)**
 
-### Market Ratio
+### Market Ratio :
 - Price/Earnings Ratio **(P/E)**
 - Earnings Per Share **(EPS)**
 - Price/Book Value Ratio **(P/BV)**
@@ -65,20 +68,20 @@ All Copyrights Are Reserved To Me ^-^
 # Chapter 5: Bond Valuation
 ---------------------------
 
-- Valuation Of Bond (Perpetual Bond / Maturity Bond)
+- Valuation Of Bond **(Perpetual Bond / Maturity Bond)**
 - Current Yeild **(CY)**
 - Yield to Maturity **(YTM)**
 
 # Chapter 6: Stock Valuation
 ----------------------------
 
-- Zero Growth Model (Common Stock / Preferred Stock)
+- Zero Growth Model **(Common Stock / Preferred Stock)**
 - Constant Growth **(Gordon)** Model 
 - Variable Growth Model 
 - Free Cash Flow **(FCF)** Model
 - Book Value Per Share **(BVPS)**
 - Liquidation Value Per Share
-- Price Earnings (P/E) Ratio Valuation
+- Price Earnings **(P/E)** Ratio Valuation
 
 # Chapter 7: Cost Of Capital
 ----------------------------
