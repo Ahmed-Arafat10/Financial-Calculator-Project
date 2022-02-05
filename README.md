@@ -6,7 +6,7 @@ All Copyrights Are Reserved To Me ^-^
 
 ## Features Of Program:
 
-# Chapter 1/2 Theoretical (No Calculation Is Needed)
+# Chapter 1/2 Theoretical **(No Calculation Is Needed)**
 -------------------------------------------
 
 # Chapter 3: Financial Ratios
@@ -27,24 +27,24 @@ All Copyrights Are Reserved To Me ^-^
 - Debt-To-Equity Ratio
 - Equity Multiplier (EM) Ratio
 - Times Interest Earned Ratio
-- Fixed-Payment Coverage Ratio (FPCR)
+- Fixed-Payment Coverage Ratio **(FPCR)**
 
 ### Profitability Ratio
 - Gross Profit Margin
 - Operating Profit Margin
 - Net Profit Margin
-- Return On Assets (ROA/ROI)
-- Return On Equity (ROE)
+- Return On Assets **(ROA/ROI)**
+- Return On Equity **(ROE)**
 
 ### Market Ratio
-- Price/Earnings Ratio (P/E)
-- Earnings Per Share (EPS)
-- Price/Book Value Ratio (P/BV)
-- Book Value Per Share (BV)
+- Price/Earnings Ratio **(P/E)**
+- Earnings Per Share **(EPS)**
+- Price/Book Value Ratio **(P/BV)**
+- Book Value Per Share **(BV)**
 - Dividends Yield Ratio
-- Dividends Per Share (DPS)
-- Free Cash Flow (FCF)
-- DuPont System (ROA/ROE)
+- Dividends Per Share **(DPS)**
+- Free Cash Flow **(FCF)**
+- DuPont System **(ROA/ROE)**
 
 # Chapter 4: Risk & Required Rate Of Return
 -------------------------------------------
@@ -52,56 +52,56 @@ All Copyrights Are Reserved To Me ^-^
 - Rate Of Return For An Asset
 - Range
 - Risk/Return For Investment (Historical or Prediction)
-- Coefficient Of Variance (CV)
-- Correlation/Covariance (COV)
+- Coefficient Of Variance **(CV)**
+- Correlation/Covariance **(COV)**
 - Risk/Return For Portfolio 
 - Beta Coefficient For Portfolio
-- Capital Asset Pricing Model (CAPM)
-- Present Value Interest Factor For Annuity (PVIFA)
-- Present Value Interest Factor (PVIF)
-- Future Value Interest Factor For Annuity (FVIFA)
-- Future Value Interest Factor (FVIF)
+- Capital Asset Pricing Model **(CAPM)**
+- Present Value Interest Factor For Annuity **(PVIFA)**
+- Present Value Interest Factor **(PVIF)**
+- Future Value Interest Factor For Annuity **(FVIFA)**
+- Future Value Interest Factor **(FVIF)**
 
 # Chapter 5: Bond Valuation
 ---------------------------
 
 - Valuation Of Bond (Perpetual Bond / Maturity Bond)
-- Current Yeild (CY)
-- Yield to Maturity (YTM)
+- Current Yeild **(CY)**
+- Yield to Maturity **(YTM)**
 
 # Chapter 6: Stock Valuation
 ----------------------------
 
 - Zero Growth Model (Common Stock / Preferred Stock)
-- Constant Growth (Gordon) Model 
+- Constant Growth **(Gordon)** Model 
 - Variable Growth Model 
-- Free Cash Flow (FCF) Model
-- Book Value Per Share (BVPS)
+- Free Cash Flow **(FCF)** Model
+- Book Value Per Share **(BVPS)**
 - Liquidation Value Per Share
 - Price Earnings (P/E) Ratio Valuation
 
 # Chapter 7: Cost Of Capital
 ----------------------------
 
-- Cost Of Long-Term Debt (Current Yield (CY))
-- Cost Of Long-Term Debt (Ri)
-- Cost Of Common Stock Equity (Rs)
-- Cost Of Retained Earnings (Rr)
-- Cost Of New Issue Of Common Stock (Rn)
-- Weighted Average Cost Of Capital (WACC)
+- Cost Of Long-Term Debt **(Current Yield (CY))**
+- Cost Of Long-Term Debt **(Ri)**
+- Cost Of Common Stock Equity **(Rs)**
+- Cost Of Retained Earnings **(Rr)**
+- Cost Of New Issue Of Common Stock **(Rn)**
+- Weighted Average Cost Of Capital **(WACC)**
 
 
 # Chapter 8: Capital Budgeting
 ------------------------------
 
-- Present Value Function (PV)
-- Future Value Function (FV)
-- Net Present Value (NPV)
-- Profitability Index (PI)
-- Internal Rate Of Return (IRR)
-- Modified Internal Rate Of Return (MIRR)
-- Payback Period (PB)
-- Discounted Payback Period (DPB)
+- Present Value Function **(PV)**
+- Future Value Function **(FV)**
+- Net Present Value **(NPV)**
+- Profitability Index **(PI)**
+- Internal Rate Of Return **(IRR)**
+- Modified Internal Rate Of Return **(MIRR)**
+- Payback Period **(PB)**
+- Discounted Payback Period **(DPB)**
 
->VIP Note : This Program Should Not Replace Using Your Calculator To Solve Equations, You Have To Train Yourself How To Use Calculate To Calculate 
+> **VIP Note :** This Program Should Not Replace Using Your Calculator To Solve Equations, You Have To Train Yourself How To Use Calculate To Calculate 
 Financial Equations Efficiently & Effectively As You Will Use The Calculator In The Final Exam , This Program Just Help You To Check Your Answer 
